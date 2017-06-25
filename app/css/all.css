@@ -203,6 +203,102 @@ header .slid {
       margin: 30px 0;
       cursor: pointer; }
 
+footer {
+  background-image: url(../img/foot.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0 95px; }
+  footer h3 {
+    font-size: 42px;
+    margin-bottom: 105px; }
+  footer .text {
+    width: 40%;
+    float: left;
+    text-align: left; }
+    footer .text h4 {
+      font-size: 24px; }
+    footer .text p {
+      opacity: 0.5;
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      margin-bottom: 40px; }
+    footer .text nav {
+      overflow: hidden;
+      margin-bottom: 20px; }
+      footer .text nav li {
+        float: left;
+        list-style: none;
+        margin-left: 15px; }
+      footer .text nav li:nth-child(2) a {
+        background-position: 42px 0; }
+      footer .text nav li:nth-child(3) a {
+        background-position: 84px 0; }
+      footer .text nav a {
+        width: 42px;
+        height: 42px;
+        background-image: url(../img/social.png);
+        display: block; }
+    footer .text span, footer .text a {
+      color: #bface2;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 24px;
+      display: block; }
+  footer .forms {
+    width: 48%;
+    float: right; }
+    footer .forms ::-webkit-input-placeholder {
+      color: #c1c1c1;
+      font-size: 16px; }
+    footer .forms ::-moz-placeholder {
+      color: #c1c1c1;
+      font-size: 16px; }
+    footer .forms :-moz-placeholder {
+      color: #c1c1c1;
+      font-size: 16px; }
+    footer .forms :-ms-input-placeholder {
+      color: #c1c1c1;
+      font-size: 16px; }
+    footer .forms input {
+      border: none;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      width: 48%;
+      padding: 15px 20px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin-bottom: 30px; }
+    footer .forms label:nth-child(1) input {
+      float: left; }
+    footer .forms label:nth-child(2) input {
+      float: right; }
+    footer .forms textarea {
+      resize: none;
+      width: 100%;
+      border: none;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      padding: 20px;
+      font-family: "OpenSansRegular";
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      height: 180px;
+      margin-bottom: 30px; }
+    footer .forms button {
+      color: white;
+      font-family: "OpenSansRegular";
+      font-size: 22px;
+      font-weight: 400;
+      background-color: #49cbcd;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      padding: 10px 55px;
+      border: none;
+      float: right; }
+
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {

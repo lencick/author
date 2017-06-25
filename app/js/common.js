@@ -12,4 +12,15 @@ $(document).ready(function() {
 		dotsSpeed : 800,
 		dragEndSpeed : 800
 	});
+	  $("form.forms").submit(function() {
+        var form_data = $(this).serialize();
+        $.ajax({
+        	type: "POST",
+        	url: "mail.php",
+        	data: form_data,
+        	success: function() {                  
+            	$('form.forms').html("Спасибо! <br/> Ваше сообщение принято!");
+        	}
+        });
+    });
 });
