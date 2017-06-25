@@ -1,30 +1,7 @@
 @import "../css/fonts"
-$font: ""
-$main_color: #be1e2d
-$color_text: #232020
-
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
-
-*:-moz-placeholder
-	color: #666
-	opacity: 1
-
-*::-moz-placeholder
-	color: #666
-	opacity: 1
-
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
+$font: "OpenSansRegular"
+$main_color: #44c0c2
+$color_text: #484c55
 
 *
 	margin: 0
@@ -46,6 +23,89 @@ body
 	margin: 0 auto
 	padding: 0 10px
 	overflow: hidden
-
+header
+	.top_line
+		background-color: rgba(255, 255, 255, 0.5)
+		box-sizing: border-box
+		left: 0
+		position: fixed
+		top: 0
+		width: 100%
+		z-index: 9999
+	h1
+		color: $main_color
+		font-family: LobsterRegular
+		font-size: 43px
+		font-weight: 400
+		line-height: 24px
+		float: left
+		padding: 40px 0
+	nav
+		float: right
+		ul
+			li
+				display: inline-block
+				a
+					font-family: $font
+					font-size: 15px
+					line-height: 24px
+					color: $color_text
+					text-decoration: none
+					padding: 40px 20px
+					display: block
+					&.active, &:hover
+						background-color: #f8f9fb
+						border-bottom: 3px solid $main_color
+	.slid
+		text-align: center
+		position: relative
+		margin-top: 107px
+		img
+			width: 100%
+			display: block
+		.text
+			position: absolute
+			top: 50%
+			width: 100%
+			transform: translate(0px, -50%)
+			h2
+				text-shadow: 0.1px 1px 0 rgba(0, 0, 0, 0.16)
+				color: #fff
+				font-size: 62px
+				margin-bottom: 50px
+			p
+				color: #fff
+				font-size: 23px
+				line-height: 37px
+				max-width: 390px
+				margin: 0 auto
+				margin-bottom: 60px
+			button
+				color: #fff
+				font-size: 23px
+				line-height: 23px
+				border: 3px solid white
+				border-radius: 5px
+				padding: 20px 40px
+				background-color: transparent
+				cursor: pointer				
+%owl-base
+	position: absolute
+	top: 50%
+	display: block
+	height: 52px
+	background-repeat: no-repeat
+	width: 51px
+	transform: translate(0px, -50%)
+	&:hover
+		opacity: 0.7
+.owl-prev
+	@extend %owl-base
+	left: 3%
+	background-image: url("../img/prev.png")	
+.owl-next
+	@extend %owl-base
+	right: 3%
+	background-image: url("../img/next.png")
 
 @import "_media"

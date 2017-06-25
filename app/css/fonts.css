@@ -1,7 +1,18 @@
 @font-face {
-  font-family:'PFSquareSansPro'; 
-  src: url('../fonts/PFSquareSansPro/PFSquareSansPro.eot'); 
-  src: local('PFSquareSansPro'),
-       url('../fonts/PFSquareSansPro/PFSquareSansPro.woff') format('woff'),
-       url('../fonts/PFSquareSansPro/PFSquareSansPro.ttf') format('truetype');
+	font-family: "LobsterRegular";
+	src: url("../fonts/LobsterRegular/LobsterRegular.eot");
+	src: url("../fonts/LobsterRegular/LobsterRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/LobsterRegular/LobsterRegular.woff") format("woff"),
+	url("../fonts/LobsterRegular/LobsterRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
 }

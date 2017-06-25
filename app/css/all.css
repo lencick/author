@@ -1,31 +1,16 @@
 @font-face {
-  font-family: 'PFSquareSansPro';
-  src: url("../fonts/PFSquareSansPro/PFSquareSansPro.eot");
-  src: local("PFSquareSansPro"), url("../fonts/PFSquareSansPro/PFSquareSansPro.woff") format("woff"), url("../fonts/PFSquareSansPro/PFSquareSansPro.ttf") format("truetype"); }
+  font-family: "LobsterRegular";
+  src: url("../fonts/LobsterRegular/LobsterRegular.eot");
+  src: url("../fonts/LobsterRegular/LobsterRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LobsterRegular/LobsterRegular.woff") format("woff"), url("../fonts/LobsterRegular/LobsterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-*::-webkit-input-placeholder {
-  color: #666;
-  opacity: 1; }
-
-*:-moz-placeholder {
-  color: #666;
-  opacity: 1; }
-
-*::-moz-placeholder {
-  color: #666;
-  opacity: 1; }
-
-*:-ms-input-placeholder {
-  color: #666;
-  opacity: 1; }
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: #666; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: #666; }
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
 * {
   margin: 0;
@@ -33,16 +18,109 @@ body textarea:required:valid {
 
 body {
   background: #fff;
-  font-family: "";
+  font-family: "OpenSansRegular";
   min-width: 320px;
   font-size: 25px;
-  color: #232020; }
+  color: #484c55; }
 
 .content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
   overflow: hidden; }
+
+header .top_line {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+header h1 {
+  color: #44c0c2;
+  font-family: LobsterRegular;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 24px;
+  float: left;
+  padding: 40px 0; }
+
+header nav {
+  float: right; }
+  header nav ul li {
+    display: inline-block; }
+    header nav ul li a {
+      font-family: "OpenSansRegular";
+      font-size: 15px;
+      line-height: 24px;
+      color: #484c55;
+      text-decoration: none;
+      padding: 40px 20px;
+      display: block; }
+      header nav ul li a.active, header nav ul li a:hover {
+        background-color: #f8f9fb;
+        border-bottom: 3px solid #44c0c2; }
+
+header .slid {
+  text-align: center;
+  position: relative;
+  margin-top: 107px; }
+  header .slid img {
+    width: 100%;
+    display: block; }
+  header .slid .text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translate(0px, -50%);
+        -ms-transform: translate(0px, -50%);
+            transform: translate(0px, -50%); }
+    header .slid .text h2 {
+      text-shadow: 0.1px 1px 0 rgba(0, 0, 0, 0.16);
+      color: #fff;
+      font-size: 62px;
+      margin-bottom: 50px; }
+    header .slid .text p {
+      color: #fff;
+      font-size: 23px;
+      line-height: 37px;
+      max-width: 390px;
+      margin: 0 auto;
+      margin-bottom: 60px; }
+    header .slid .text button {
+      color: #fff;
+      font-size: 23px;
+      line-height: 23px;
+      border: 3px solid white;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      padding: 20px 40px;
+      background-color: transparent;
+      cursor: pointer; }
+
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  display: block;
+  height: 52px;
+  background-repeat: no-repeat;
+  width: 51px;
+  -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+          transform: translate(0px, -50%); }
+  .owl-prev:hover, .owl-next:hover {
+    opacity: 0.7; }
+
+.owl-prev {
+  left: 3%;
+  background-image: url("../img/prev.png"); }
+
+.owl-next {
+  right: 3%;
+  background-image: url("../img/next.png"); }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
