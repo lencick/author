@@ -1,5 +1,6 @@
 <?
-if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST['phone']!="")){
+if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['email
+    '])&&$_POST['message']!="")){
         $to = 'lencick@inbox.ru';
         $subject = 'Обратный звонок';
         $message = '
@@ -9,12 +10,11 @@ if((isset($_POST['name'])&&$_POST['name']!="")&&(isset($_POST['phone'])&&$_POST[
                     </head>
                     <body>
                         <p>Имя: '.$_POST['name'].'</p>
-                        <p>Телефон: '.$_POST['phone'].'</p>
+                        <p>Сообщение: '.$_POST['message'].'</p>
                         <p>email: '.$_POST['email'].'</p>                        
                     </body>
                 </html>';
         $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-        $headers .= "From: Отправитель <from@example.com>\r\n";
         mail($to, $subject, $message, $headers);
 }
 ?>

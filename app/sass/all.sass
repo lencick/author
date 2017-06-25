@@ -90,7 +90,48 @@ header
 				border-radius: 5px
 				padding: 20px 40px
 				background-color: transparent
-				cursor: pointer				
+				cursor: pointer
+%span-base
+	width: 100%
+	height: 2px
+	background-color: $main_color
+	transition: all 0.3s
+	backface-visibility: hidden
+	border-radius: 2px
+	left: 0
+.toggle-mnu
+	float: right
+	position: absolute
+	right: 35px
+	top: 0
+	text-align: center
+	line-height: 48px
+	display: none
+	width: 28px
+	height: 28px
+	margin-top: 14px
+	cursor: pointer
+
+	span 
+		position: relative
+		display: block
+		@extend %span-base
+		
+		&:after
+			@extend %span-base
+			@extend %before
+			top: 18px
+		&:before
+			@extend %span-base
+			@extend %before
+			top: 9px
+	
+	&.on span
+		background-color: transparent
+		&:before
+			transform: rotate(45deg) translate(-1px, 0px)
+		&:after
+			transform: rotate(-45deg) translate(6px, -7px)				
 %owl-base
 	position: absolute
 	top: 50%
