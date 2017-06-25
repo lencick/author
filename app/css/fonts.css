@@ -1,0 +1,7 @@
+@font-face {
+  font-family:'PFSquareSansPro'; 
+  src: url('../fonts/PFSquareSansPro/PFSquareSansPro.eot'); 
+  src: local('PFSquareSansPro'),
+       url('../fonts/PFSquareSansPro/PFSquareSansPro.woff') format('woff'),
+       url('../fonts/PFSquareSansPro/PFSquareSansPro.ttf') format('truetype');
+}

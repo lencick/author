@@ -1,0 +1,51 @@
+@import "../css/fonts"
+$font: ""
+$main_color: #be1e2d
+$color_text: #232020
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+*
+	margin: 0
+	padding: 0
+%before
+	content: ""
+	position: absolute
+%background
+	background-size: cover
+	background-position: center
+body
+	background: #fff
+	font-family: $font
+	min-width: 320px
+	font-size: 25px
+	color: $color_text
+.content
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 10px
+	overflow: hidden
+
+
+@import "_media"
