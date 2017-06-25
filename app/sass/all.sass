@@ -17,7 +17,9 @@ body
 	font-family: $font
 	min-width: 320px
 	font-size: 25px
+	font-weight: 400
 	color: $color_text
+	text-align: center
 .content
 	max-width: 1200px
 	margin: 0 auto
@@ -107,5 +109,81 @@ header
 	@extend %owl-base
 	right: 3%
 	background-image: url("../img/next.png")
+.team
+	h3
+		font-size: 42px
+		margin: 110px
+	.icon
+		display: inline-block
+		width: 21%
+		margin: 0 1%
+		.img_icon
+			background-color: #eeeef0
+			width: 200px
+			height: 200px
+			border-radius: 50%
+			margin: 0 auto
+			position: relative
+			&:hover:before
+				color: #f46d6d
+				content: "+"
+				font-family: fantasy
+				font-size: 85px
+				font-weight: 700
+				height: 41px
+				left: 37%
+				position: absolute
+				top: 25%
+				width: 42px							
+		h4
+			font-size: 22px
+			margin-top: 70px
+		span
+			font-size: 14px
+		p
+			font-size: 14px
+			margin: 35px 0 100px
+.price
+	background-color: #f1f1f1
+	padding: 110px 0 90px
+	.icon
+		box-sizing: border-box
+		width: 30%
+		display: inline-block
+		margin: 1%
+		background-color: #f8f9fb
+		&:nth-child(2n)
+			h4, button
+				background-color: #49cbcd
+		&:nth-child(2n-1)
+			h4, button
+				background-color: #485460
+		h4			
+			color: #fff
+			font-size: 26px
+			font-weight: 400
+			padding: 20px
+		span
+			color: #485460
+			font-size: 20px
+			line-height: 65px
+		li
+			color: #8c9299
+			list-style: none
+			line-height: 45px
+			font-size: 14px
+			background-color: white
+			border: 1px solid #ecf0f1
+			border-top: none
+			&:nth-child(1)
+				border-top: 1px solid #ecf0f1
+		button
+			color: white
+			font-size: 17px
+			border-radius: 3px
+			padding: 10px 45px
+			border: none
+			margin: 30px 0
+			cursor: pointer
 
 @import "_media"

@@ -21,7 +21,9 @@ body {
   font-family: "OpenSansRegular";
   min-width: 320px;
   font-size: 25px;
-  color: #484c55; }
+  font-weight: 400;
+  color: #484c55;
+  text-align: center; }
 
 .content {
   max-width: 1200px;
@@ -121,6 +123,85 @@ header .slid {
 .owl-next {
   right: 3%;
   background-image: url("../img/next.png"); }
+
+.team h3 {
+  font-size: 42px;
+  margin: 110px; }
+
+.team .icon {
+  display: inline-block;
+  width: 21%;
+  margin: 0 1%; }
+  .team .icon .img_icon {
+    background-color: #eeeef0;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    margin: 0 auto;
+    position: relative; }
+    .team .icon .img_icon:hover:before {
+      color: #f46d6d;
+      content: "+";
+      font-family: fantasy;
+      font-size: 85px;
+      font-weight: 700;
+      height: 41px;
+      left: 37%;
+      position: absolute;
+      top: 25%;
+      width: 42px; }
+  .team .icon h4 {
+    font-size: 22px;
+    margin-top: 70px; }
+  .team .icon span {
+    font-size: 14px; }
+  .team .icon p {
+    font-size: 14px;
+    margin: 35px 0 100px; }
+
+.price {
+  background-color: #f1f1f1;
+  padding: 110px 0 90px; }
+  .price .icon {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 30%;
+    display: inline-block;
+    margin: 1%;
+    background-color: #f8f9fb; }
+    .price .icon:nth-child(2n) h4, .price .icon:nth-child(2n) button {
+      background-color: #49cbcd; }
+    .price .icon:nth-child(2n-1) h4, .price .icon:nth-child(2n-1) button {
+      background-color: #485460; }
+    .price .icon h4 {
+      color: #fff;
+      font-size: 26px;
+      font-weight: 400;
+      padding: 20px; }
+    .price .icon span {
+      color: #485460;
+      font-size: 20px;
+      line-height: 65px; }
+    .price .icon li {
+      color: #8c9299;
+      list-style: none;
+      line-height: 45px;
+      font-size: 14px;
+      background-color: white;
+      border: 1px solid #ecf0f1;
+      border-top: none; }
+      .price .icon li:nth-child(1) {
+        border-top: 1px solid #ecf0f1; }
+    .price .icon button {
+      color: white;
+      font-size: 17px;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      padding: 10px 45px;
+      border: none;
+      margin: 30px 0;
+      cursor: pointer; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
