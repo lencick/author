@@ -1,9 +1,9 @@
 @font-face {
 	font-family: "LobsterRegular";
-	src: url("../fonts/LobsterRegular/LobsterRegular.eot");
-	src: url("../fonts/LobsterRegular/LobsterRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/LobsterRegular/LobsterRegular.woff") format("woff"),
-	url("../fonts/LobsterRegular/LobsterRegular.ttf") format("truetype");
+	src: url("../fonts/lobsterRegular/lobsterRegular.eot");
+	src: url("../fonts/lobsterRegular/lobsterRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/lobsterRegular/lobsterRegular.woff") format("woff"),
+	url("../fonts/lobsterRegular/lobsterRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
